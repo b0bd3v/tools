@@ -1,6 +1,6 @@
 #!/bin/bash
 mainPath=$(pwd)
-defaultUser=$USER
+defaultUserName="Roberto Martins"
 
 
 

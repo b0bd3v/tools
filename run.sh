@@ -10,7 +10,7 @@ source ./config/main.sh
 numArgs="$#"
 #echo "Number of args: $numArgs"
 
-echo "Digite a chave de comando que deseja:"
+echo "Olá $defaultUserName. Digite a chave de comando que deseja:"
 read taskKey
 
 case "$taskKey" in
