@@ -23,6 +23,8 @@ case "$taskKey" in
 	;;
 esac
 
+source "./scripts/$taskKey/$taskKey.sh"
+
 #lastArg="${!#}"
 #echo "Last arg: $lastArg"
 
