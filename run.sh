@@ -5,6 +5,8 @@
 # roberto.martins.info@gmail.com
 ##################################
 
+source ./config/main.sh
+
 numArgs="$#"
 #echo "Number of args: $numArgs"
 
