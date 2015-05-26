@@ -12,9 +12,12 @@ read optionProjeto
 case "$optionProjeto" in 
 	"Y")
 		echo "Escolha um projeto. Segue a lista $moovFolder:"
-		echo $(ls "~/Moovweb\ Projects/" ) 
+		ls -1 ~/Moovweb\ Projects/ 
 		echo "Digite o nome do projeto:"
   		read nomeProjeto
+		
+		subl -a ~/Moovweb\ Projects/$nomeProjeto	
+
 
 	;;	
 esac
