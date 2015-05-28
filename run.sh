@@ -8,22 +8,30 @@
 source ./config/main.sh
 
 numArgs="$#"
-#echo "Number of args: $numArgs"
+echo "Number of args: $numArgs"
 
-echo "Olá $defaultUserName. Digite a chave de comando que deseja:"
-read taskKey
+if [ $numArgs != "0" ]; then
+  taskKey="$1"	
+else
+    echo "Olá $defaultUserName. Digite a chave de comando que deseja:"
+    read taskKey
 
-case "$taskKey" in
-	"obj" ) 
-		echo "Começando os trabalhos na Object Edge"
-	;;
-	"hugweb")
-		echo "Começando os trabalho da Hugmedia Web"
-	;;	
-	"hugdroid")
-		echo "Começando os trabalho da Hugmedia Android"
-	;;
-esac
+    case "$taskKey" in
+      "obj" )
+         echo "Começando os trabalhos na Object Edge"
+      ;;
+      "hugweb")
+         echo "Começando os trabalho da Hugmedia Web"
+      ;;
+      "hugdroid")
+         echo "Começando os trabalho da Hugmedia Android"
+      ;;
+    esac
+fi
+
+
+
+
 
 source "./scripts/$taskKey/$taskKey.sh"
 
