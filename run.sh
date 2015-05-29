@@ -8,7 +8,7 @@
 source ./config/main.sh
 
 numArgs="$#"
-echo "Number of args: $numArgs"
+#echo "Number of args: $numArgs"
 
 if [ $numArgs != "0" ]; then
   taskKey="$1"	
