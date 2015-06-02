@@ -1,0 +1,4 @@
+#!/bin/bash
+mainPath=$(dirname $0)
+ln -s "$mainPath/run" "/usr/local/bin/"
+ln -s "$mainPath/run" "/usr/bin/"
