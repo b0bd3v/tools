@@ -5,7 +5,8 @@
 # roberto.martins.info@gmail.com
 ##################################
 
-source ./config/main.sh
+
+source "$(dirname $0)/config/main.sh"
 
 numArgs="$#"
 #echo "Number of args: $numArgs"
@@ -33,7 +34,7 @@ fi
 
 
 
-source "./scripts/$taskKey/$taskKey.sh"
+source "$mainPath/scripts/$taskKey/$taskKey.sh"
 
 #lastArg="${!#}"
 #echo "Last arg: $lastArg"

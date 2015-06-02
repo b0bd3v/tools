@@ -1,5 +1,5 @@
 #!/bin/bash
-mainPath=$(pwd)
+mainPath=$(dirname $0)
 defaultUserName="Roberto Martins"
 
 
