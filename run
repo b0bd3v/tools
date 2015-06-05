@@ -4,10 +4,8 @@
 # Contact:
 # roberto.martins.info@gmail.com
 ##################################
-
-
-source "$(dirname $0)/config/main.sh"
-
+DIR="$(dirname "$(readlink -f "$0")")"
+source "$DIR/config/main.sh"
 numArgs="$#"
 #echo "Number of args: $numArgs"
 
@@ -34,7 +32,7 @@ fi
 
 
 
-source "$mainPath/scripts/$taskKey/$taskKey.sh"
+source "$DIR/scripts/$taskKey/$taskKey.sh"
 
 #lastArg="${!#}"
 #echo "Last arg: $lastArg"
