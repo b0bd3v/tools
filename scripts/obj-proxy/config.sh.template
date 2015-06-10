@@ -1,0 +1,2 @@
+#!/bin/bash
+$commandOpenSSH = "sudo sshpass -p xxxxxx ssh -2gNC xxxxx@xxxxx -L 81:proxy.moov.sh:80"
