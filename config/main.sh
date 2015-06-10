@@ -3,6 +3,7 @@ defaultUserName="Roberto Martins"
 
 #Configurações de ambiente
 browser="google-chrome"
+newTerminalCommand="gnome-terminal -e "
 
 # Web server Configurations
 WSPublicFolder="/var/www/html/"
