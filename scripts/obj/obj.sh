@@ -1,7 +1,7 @@
 #!/bin/bash
 source "$DIR/scripts/$taskKey/config.sh"
 echo "Inciando sdk Moovweb"
-$newTerminalCommand "sudo moov start"
+$commandOpenTerminal "sudo moov start"
 $DIR/run gta
 #echo "Abrindo GTAgile"
 #google-chrome "http://gtagile.com.br/Priority/OE"
