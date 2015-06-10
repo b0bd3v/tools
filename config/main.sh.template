@@ -1,0 +1,13 @@
+#!/bin/bash
+defaultUserName="Roberto Martins"
+
+#Configurações de ambiente
+browser="google-chrome"
+newTerminalCommand="gnome-terminal -e "
+
+# Web server Configurations
+WSPublicFolder="/var/www/html/"
+WSLocalUrl="127.0.0.1"
+ 
+
+
