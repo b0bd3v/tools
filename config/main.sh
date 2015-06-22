@@ -2,7 +2,7 @@
 defaultUserName="Roberto Martins"
 
 #Configurações de ambiente
-browser="chromium-browser"
+browser="google-chrome"
 commandOpenTerminal="gnome-terminal -e "
 
 # Web server Configurations
