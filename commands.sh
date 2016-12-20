@@ -6,4 +6,7 @@ mkcd ()
 	cd -P -- "$1"
 }
 
-
+hosts()
+{
+	sudo vim /etc/hosts
+}
